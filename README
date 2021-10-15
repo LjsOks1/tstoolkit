@@ -1,0 +1,17 @@
+TS Toolkit is an application to modify an mpeg2 transport stream file on the file.
+
+Currently the following functionalities are implemented:
+
+1. Convert X31 signalling to SCTE35
+2. Introduce AIT to the transport stream
+
+--work in progress --
+3. Add DSMCC carousels to the stream
+
+The application is reading all the settings from a config file, please check the enclosed samples.
+
+Transport streams are captured through a GStreamer pipeline and after modifications streamed out through a second pipeline.
+Pipelines are defined accoroding to the gst-launch syntax.
+
+
+ 
